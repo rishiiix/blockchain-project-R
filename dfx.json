@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "BLOCKCHAIN_PROJECT_R_backend": {
+      "main": "src/BLOCKCHAIN_PROJECT_R_backend/main.mo",
+      "type": "motoko"
+    },
+    "BLOCKCHAIN_PROJECT_R_frontend": {
+      "dependencies": [
+        "BLOCKCHAIN_PROJECT_R_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/BLOCKCHAIN_PROJECT_R_frontend/src/index.html"
+      },
+      "source": [
+        "src/BLOCKCHAIN_PROJECT_R_frontend/assets",
+        "dist/BLOCKCHAIN_PROJECT_R_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
